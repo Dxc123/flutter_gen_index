@@ -4,14 +4,14 @@ import 'package:flutter_gen_index/log_untls.dart';
 
 void main(List<String> arguments) {
   if (arguments.isNotEmpty) {
-    if (arguments[0] == 'flutter_gen_index' || arguments[0] == 'gen_index') {
+    if (arguments[0] == 'gen_index') {
       startExecutingCommands();
     } else {
-      logError('Invalid command. Use "flutter_gen_index" or "gen_index".');
+      logError('Invalid command. Use "gen_index".');
       exit(1);
     }
   } else {
-    logError('Invalid command. Use "flutter_gen_index" or "gen_index".');
+    logError('Invalid command. Use flutter_gen_index [arguments]');
     exit(1);
   }
 }
